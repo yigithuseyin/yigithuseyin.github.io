@@ -1,0 +1,75 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 95%; 
+}
+
+/* Optional: Style the links for better spacing */
+.nav-links a {
+    margin-left: 15px; /* Space between the links */
+    text-decoration: none;
+    color: blue; /* Match the color in your image */
+}
+
+.nav-name a {
+    font-weight: bold;
+    color: rgb(104, 105, 104);
+    text-decoration: none;
+}
+
+
+/* ABOUT SECTION STYLING */
+
+
+.about-content {
+    /* We can simplify by just centering the profile-summary block itself */
+    text-align: center; /* Center the h2/p if you add them to about-content */
+    border-radius: 5%;
+}
+
+.profile-summary {
+    display: flex; /* Makes the photo-column and details-group go side-by-side */
+    justify-content: center; /* Centers the content of this Flex container */
+    align-items: flex-start; /* Aligns items to the top (prevents vertical stretching) */
+    
+    max-width: 600px; /* Keeps the content from spreading too wide */
+    margin: 40px auto; /* Centers the block horizontally */
+    padding: 20px;
+}
+
+.photo-column {
+    display: flex;
+    flex-direction: column; /* Stacks children (photo and name) vertically */
+    align-items: center; /* Centers the photo and name relative to each other */
+    margin-right: 25px; /* Space between the photo/name column and the details group */
+}
+
+.profile-photo {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px; 
+    box-shadow: #E0E0E0 0px 0px 10px 0px;
+}
+
+.profile-name {
+    margin: 0 0 15px 0; /* Remove default margins and add space below the name */
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+.details-group p {
+    padding-top: 10px;
+    margin: 0;
+    line-height: 1.4;
+    text-align: left; /* Ensure the details text is left-aligned */
+}
